@@ -1,18 +1,10 @@
-# NeuroSymbolic.ipynb - README
+# NeuroSymbolic
 
 ## Overview
-`NeuroSymbolic.ipynb` is a Jupyter notebook for a System 2 course (Spring 2025) homework by Fatemeh Shahhosseini (403206519). It explores **Neurosymbolic AI**, using seq2seq models to generate programs for **Visual Question Answering (VQA)**, combining natural language and visual reasoning for interpretable AI.
+This notebook explores **Neurosymbolic AI**, using seq2seq models to generate programs for **Visual Question Answering (VQA)**, combining natural language and visual reasoning for interpretable AI.
 
 ## Purpose
 Demonstrates generating programs with seq2seq models for VQA, where programs act as symbols and seq2seq models as neural structures, leveraging a compositional program space for generalizable solutions.
-
-## Structure
-- **Markdown Cells**: Introduce the assignment, student info, and neurosymbolic VQA concepts, with a base64-encoded image.
-- **Code Cells**: Likely include Python code for:
-  - Loading VQA datasets (e.g., CLEVR) and models (e.g., 6.43GB weights).
-  - Implementing and training a seq2seq model for program generation.
-  - Evaluating VQA performance.
-- **Widgets**: Show download progress for datasets/models using Jupyter widgets.
 
 ## Key Components
 - **Neurosymbolic Framework**: Programs as symbols, seq2seq models (e.g., Transformer/RNN) as neural components.
@@ -40,10 +32,3 @@ Demonstrates generating programs with seq2seq models for VQA, where programs act
 - Truncated document limits full details; assumes typical VQA/neurosymbolic setup.
 - Ensure widget compatibility (`@jupyter-widgets/controls` v1.5.0).
 - Contact instructor for dataset access (e.g., CLEVR).
-
-## Author
-- Fatemeh Shahhosseini (403206519)
-- Course: System 2, Spring 2025
-
-## License
-Academic work; contact author/instructor for usage permissions.
