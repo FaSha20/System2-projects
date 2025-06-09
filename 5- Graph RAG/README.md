@@ -12,10 +12,8 @@ GraphRAG leverages a graph-based text index and a Large Language Model (LLM) to 
 2. [Pipeline](#pipeline)
 3. [Dependencies](#dependencies)
 4. [Usage](#usage)
-5. [Key Functions](#key-functions)
-6. [Questions Addressed](#questions-addressed)
-7. [Results](#results)
-8. [References](#references)
+5. [Results](#results)
+6. [References](#references)
 
 ---
 
@@ -90,47 +88,6 @@ To install the dependencies, run:
    final_answer = generate_final_answer(community_summaries, query)
    print("Answer: ", final_answer)
    ```
-
----
-
-## Key Functions
-
-### 1. `extract_element_Instances(chunks)`
-Extracts named entities and relationships from text chunks using an LLM.
-
-### 2. `summarize_element_Instances(elements)`
-Summarizes extracted entities and relationships into a structured format.
-
-### 3. `graph_building(summaries)`
-Builds a graph from the summarized entities and relationships.
-
-### 4. `communities_detection(graph)`
-Detects communities in the graph using the Leiden algorithm.
-
-### 5. `communities_summerization(communities, graph)`
-Summarizes each detected community based on its entities and relationships.
-
-### 6. `generate_final_answer(community_summaries, query)`
-Generates a final answer to a query by synthesizing community-based answers.
-
----
-
-## Questions Addressed
-
-The notebook addresses the following research questions:
-
-1. What problem does GraphRAG aim to solve that traditional RAG and QFS methods cannot?
-2. How does the GraphRAG architecture overcome the limitations of LLM context windows?
-3. What are the key steps in the GraphRAG pipeline, and how are they distributed between indexing time and query time?
-4. How does GraphRAG differ from previous QFS or graph-based retrieval approaches?
-5. What role do community detection algorithms (e.g., Leiden or Louvain) play in the GraphRAG framework?
-6. How does the performance of GraphRAG scale with increasing corpus size (e.g., 1M tokens)?
-7. What kind of summaries are generated during each stage of the GraphRAG pipeline, and how are they used?
-8. Why is the distinction between ‘local’ and ‘global’ queries important in the design of GraphRAG?
-9. How does entity extraction using GPT-4-turbo vary with chunk sizes in the HotPotQA dataset, as shown in Figure 2?
-10. Why do the authors claim that query-focused abstractive summarization is more appropriate than retrieval-based generation for global questions?
-11. In what ways does the modularity of graphs enable better summarization in the context of large corpora?
-12. How does GraphRAG contribute to the broader goal of sensemaking in domains like scientific discovery or intelligence analysis?
 
 ---
 
